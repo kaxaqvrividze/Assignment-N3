@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chat"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        />
+
+    <LinearLayout
+        android:background="#3CFFFFFF"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="200dp"
+        android:layout_marginHorizontal="30dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textColor="#263238" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:drawableEnd="@drawable/profile"
+            android:inputType="TODO"
+            android:autofillHints="" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="#4E342E" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_secure"
+            android:minHeight="48dp"
+            android:password="true" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:layout_width="fill_parent"
+            android:background="#1170FF"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/get_started"
+                android:textAllCaps="false"
+
+                android:textColor="#000000" />
+
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/simpleTextView"
+                android:text="@string/not_registered"
+                android:textColor="#37474F" />
+
+
+            <Button
+                android:id="@+id/btn_create"
+                android:background="@android:color/transparent"
+                android:text="@string/create_account"
+                android:textAllCaps="false"/>
+
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
